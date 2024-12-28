@@ -1,4 +1,5 @@
 ### study-of-basic-gates
+Date:24/09/2024
 
 **AIM:** 
 
@@ -61,31 +62,38 @@ Y= A⊕B
 
 5.	For different input combinations generate the timing diagram.
 
-~~~
+
 **PROGRAM**
-input a,b;
-output c,d,e,x,y,z;
-assign c=a&b;
-assign d=a|b;
-assign e=a^b;
-assign x=~(a&b);
-assign y=~(a|b);
-assign z=~(a^b);
-endmodule
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
  Developed by:Esakkindhar A
  RegisterNumber: 24001907
-~~~ 
+ ```
+module logic_gates(a, b, c1, c2, c3, c4, c5, c6, c7);
+    input a, b;
+    output c1, c2, c3, c4, c5, c6, c7;
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
+endmodule
+
+```
 **Logic symbol & Truthtable**
-![388596341-ead0b94a-6e8a-404a-bfbc-65afeda9b307](https://github.com/user-attachments/assets/adf75051-37e9-4d87-a05f-2f5493f75ccc)
 
-**RTL realization Output:** 
-![388597807-9d4bd7f5-fed4-47dc-808f-c005e8fbc2e4](https://github.com/user-attachments/assets/a4b87364-c4e3-4234-bea0-f9e62c3ebace)
+![WhatsApp Image 2024-12-27 at 10 16 47_9347ba46](https://github.com/user-attachments/assets/008f755c-7366-499f-8ad6-f1b48becf195)
 
-**Waveform**
-![388598051-9e50d333-c84e-434b-962d-9df1ef899cac](https://github.com/user-attachments/assets/70d9fa61-d5a9-4339-bddd-a5f0158848f8)
+**RTL**
+![WhatsApp Image 2024-12-27 at 10 17 56_254ca34c](https://github.com/user-attachments/assets/39bd0d08-fc7a-459f-a27f-2867385135f3)
+
+**OUTPUT**
+![Screenshot (16)](https://github.com/user-attachments/assets/dc639a50-7e88-43cc-ba45-da9a6284531b)
 
 **Result:**
-Thus the logic gates are designed and truth table are verified
+ The Truth table of logic gates in Quartus II using Verilog programming is verified.
+
+
